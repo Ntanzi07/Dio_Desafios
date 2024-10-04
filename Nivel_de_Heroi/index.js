@@ -19,4 +19,4 @@ else if(xp <= 10000)
 else
     nivel = "Radiante"
 
-console.log("O Herói de nome **" + nome + "** está no nivel de **" + nivel + "**")
+console.log("O Herói de nome " + nome + " está no nivel de " + nivel)
