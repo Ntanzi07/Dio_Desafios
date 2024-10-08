@@ -37,7 +37,7 @@ Ao final deve se exibir uma mensagem:
   ex: mago atacou usando magia
   guerreiro atacou usando espada
 
-# PLUSS Desafio de Batalha entre os Heróis
+# PLUS Desafio de Batalha entre os Heróis
 
 ## Objetivo:
 
