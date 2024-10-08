@@ -36,3 +36,10 @@ Ao final deve se exibir uma mensagem:
 - "o {tipo} atacou usando {ataque}"
   ex: mago atacou usando magia
   guerreiro atacou usando espada
+
+# PLUSS Desafio de Batalha entre os Heróis
+
+## Objetivo:
+
+Tomei a liberdade de implementar mais um desafio! 
+Usando o mesmo projeto anterior, faça dois dos Heróis lutarem em uma batalha "amistosa"
