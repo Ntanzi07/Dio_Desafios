@@ -23,6 +23,7 @@ function saldo(vitorias, derrotas){
     // Se o saldo for negativo transforma ele em 0
     if(saldo < 0)
         saldo = 0; // Nosso Herói não conseguiu...
+    
     return saldo;
 }
 
@@ -36,13 +37,13 @@ function rank(saldo){
     else if(saldo <= 50)
         rank = "Prata";  // Se vitórias for entre 21 e 50 = Prata
     else if(saldo <= 80)
-        rank = "Ouro"  // Se vitórias for entre 51 e 80 = Ouro
+        rank = "Ouro";  // Se vitórias for entre 51 e 80 = Ouro
     else if(saldo <= 90)
-        rank = "Diamante"  // Se vitórias for entre 81 e 90 = Diamante
+        rank = "Diamante";  // Se vitórias for entre 81 e 90 = Diamante
     else if(saldo <= 100)
-        rank = "Lendario"  // Se vitórias for entre 91 e 100= Lendário
+        rank = "Lendario";  // Se vitórias for entre 91 e 100= Lendário
     else
-        rank = "Imortal" // Se vitórias for maior ou igual a 101 = Imortal
+        rank = "Imortal"; // Se vitórias for maior ou igual a 101 = Imortal
 
     return rank
 }
