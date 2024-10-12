@@ -31,8 +31,6 @@ class heroi{
         // Atacando!
         console.log(`O ${this.tipo} ${this.nome} atacou usando ${tipoAtaque}`);
     }
-
-
 }
 
 // função main
@@ -49,7 +47,6 @@ function main(){
     guerreiro.atacar();
     monje.atacar();
     ninja.atacar();
-
 }
 
 main()
