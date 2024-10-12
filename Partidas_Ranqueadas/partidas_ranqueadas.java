@@ -56,5 +56,6 @@ public class partidas_ranqueadas {
         // Devolve as informações ao usuario!!!
         System.out.println("O Herói tem de saldo de " + saldoPartidas + " está no nível de " + seuRank);
 
+        input.close();
     }
 }
