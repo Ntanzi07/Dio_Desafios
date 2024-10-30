@@ -1,19 +1,19 @@
 ### Diagrama UML (Mermaid)
 ```mermaid
 classDiagram
-    class ReprodutorMusical {
+    class `ReprodutorMusical ~Interface~` {
         +tocar()
         +pausar()
         +selecionarMusica(String musica)
     }
 
-    class AparelhoTelefonico {
+    class `AparelhoTelefonico ~Interface~`{
         +ligar(String numero)
         +atender()
         +iniciarCorreioVoz()
     }
 
-    class NavegadorInternet {
+    class `NavegadorInternet ~Interface~`{
         +exibirPagina(String url)
         +adicionarNovaAba()
         +atualizarPagina()
@@ -22,7 +22,7 @@ classDiagram
     class iPhone {
     }
 
-    iPhone --> ReprodutorMusical
-    iPhone --> AparelhoTelefonico
-    iPhone --> NavegadorInternet
+    iPhone --> `ReprodutorMusical ~Interface~`
+    iPhone --> `AparelhoTelefonico ~Interface~`
+    iPhone --> `NavegadorInternet ~Interface~`
 ```
