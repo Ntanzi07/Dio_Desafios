@@ -41,10 +41,20 @@ public class Banco {
                 conta.depositar(valor);
     }
 
+    public void transferir(int numeroConta, int numeroContaTransferir, double valor){
+        for(Conta conta : listaContas){
+            if(numeroConta == conta.getNumeroConta()){
+                
+                for(Conta contaPara : listaContas){
+                    if(numeroContaTransferir == contaPara.getNumeroConta()){
+                        conta.transferir(valor, contaPara);
+                    }
+                }
+            }
+        }
+    }
+
     public String getNome() {
         return nome;
     }
-
-
-
 }

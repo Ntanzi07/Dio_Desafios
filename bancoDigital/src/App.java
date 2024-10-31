@@ -13,20 +13,7 @@ public class App {
 
             switch (op) {
                 case 1:
-                    String nome;
-                    String cpf;
-                    int tipoConta;
-
-                    System.out.println("Qual o tipo da conta [ Corrente [1] / Poupança [2] ]:");
-                    tipoConta = scannerNum.nextInt();
-
-                    System.out.println("Insira o nome do Cliente:");
-                    nome = scannerString.nextLine();
-
-                    System.out.println("Insira o cpf do Cliente:");
-                    cpf = scannerString.nextLine();
-                    
-                    banco.adicionarConta(tipoConta, nome, cpf);
+                    novoCliente();
                     break;
                 case 2:
                     operacaoDeConta(1);
@@ -35,12 +22,11 @@ public class App {
                     operacaoDeConta(2);
                     break;
                 case 4:
-                    
+                    operacaoDeConta(3);
                     break;
                 case 5:
                     banco.listarTodasContas();
                     break;
-            
                 default:
                     System.out.println("Opção não existente!!");
                     break;
@@ -61,17 +47,39 @@ public class App {
 
     public static void operacaoDeConta(int tipoOperacao){
         int numeroConta;
+        int numeroContaPara;
         double valor;
 
+        System.out.println("insira o valor:");
+        valor = scannerNum.nextDouble();
         System.out.println("insira o numero da conta:");
         numeroConta = scannerNum.nextInt();
-        System.out.println("insira o valor da conta:");
-        valor = scannerNum.nextDouble();
 
-        if(tipoOperacao == 0)
-            banco.sacar(numeroConta, valor);
-        else
+        if(tipoOperacao == 1)
             banco.depositar(numeroConta, valor);
+        else if(tipoOperacao == 2)
+            banco.sacar(numeroConta, valor);
+        else{
+            System.out.println("insira o numero da conta para qual vai transferir:");
+            numeroContaPara = scannerNum.nextInt();
+            banco.transferir(numeroConta, numeroContaPara, valor);
+        }
+    }
+
+    public static void novoCliente(){
+        String nome;
+        String cpf;
+        int tipoConta;
+
+        System.out.println("Qual o tipo da conta [ Corrente [1] / Poupança [2] ]:");
+        tipoConta = scannerNum.nextInt();
+
+        System.out.println("Insira o nome do Cliente:");
+        nome = scannerString.nextLine();
+
+        System.out.println("Insira o cpf do Cliente:");
+        cpf = scannerString.nextLine();
         
+        banco.adicionarConta(tipoConta, nome, cpf);
     }
 }
