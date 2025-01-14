@@ -1,0 +1,44 @@
+[
+    {
+        "NAME": "Mario",
+        "VELOCITY" : 4,
+        "MANEUVERABILITY" : 3,
+        "POWER" : 3,
+        "POINTS" : 0
+    },
+    {
+        "NAME": "Bowser",
+        "VELOCITY" : 5,
+        "MANEUVERABILITY" : 2,
+        "POWER" : 5,
+        "POINTS" : 0
+    },
+    {
+        "NAME": "Peach",
+        "VELOCITY" : 3,
+        "MANEUVERABILITY" : 4,
+        "POWER" : 2,
+        "POINTS" : 0
+    },
+    {
+        "NAME": "Luigi",
+        "VELOCITY" : 3,
+        "MANEUVERABILITY" : 4,
+        "POWER" : 4,
+        "POINTS" : 0
+    },
+    {
+        "NAME": "Yoshi",
+        "VELOCITY" : 2,
+        "MANEUVERABILITY" : 4,
+        "POWER" : 3,
+        "POINTS" : 0
+    },
+    {
+        "NAME": "Donkey Kong",
+        "VELOCITY" : 2,
+        "MANEUVERABILITY" : 2,
+        "POWER" : 5,
+        "POINTS" : 0
+    }
+]
