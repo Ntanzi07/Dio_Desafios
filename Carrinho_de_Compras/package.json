@@ -1,0 +1,13 @@
+{
+  "name": "carrinho_de_compras",
+  "version": "1.0.0",
+  "description": "Vamos criar a lógica por trás do carrinho de compras da shopee, aonde o carrinho armazene itens e faça o cálculo total e de sub-itens automaticamente.",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Nathan Tanzi",
+  "license": "ISC"
+}
